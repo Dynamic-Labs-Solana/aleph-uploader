@@ -15,7 +15,7 @@ const account = solana.ImportAccountFromPrivateKey(Uint8Array.from(keypair));
  
 parseStream.on('data', function(nft) {
     // 100 is possible at a time
-    for (let index = 2100; index < 2222; index++) {
+    for (let index = 2200; index < 2222; index++) {
         const key = nft[index].name.replace(' #', 'Official');
               
         const dynamicAttributes = nft[index].dynamic_attributes;  
